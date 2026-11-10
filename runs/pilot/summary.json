@@ -1,0 +1,63 @@
+{
+  "phase": "pilot",
+  "sample_ids": [
+    588,
+    1214,
+    57,
+    906,
+    1252,
+    618,
+    599,
+    289,
+    608,
+    400,
+    237,
+    616
+  ],
+  "total_records": 48,
+  "methods": {
+    "baseline": {
+      "N": 12,
+      "correct": 2,
+      "accuracy": 0.16666666666666666,
+      "mean_output_tokens": 2.9166666666666665,
+      "mean_latency": 0.28081572683341466,
+      "truncated": 0,
+      "parse_errors": 0
+    },
+    "cot": {
+      "N": 12,
+      "correct": 8,
+      "accuracy": 0.6666666666666666,
+      "mean_output_tokens": 182.91666666666666,
+      "mean_latency": 8.960710902166738,
+      "truncated": 0,
+      "parse_errors": 3
+    },
+    "cod": {
+      "N": 12,
+      "correct": 8,
+      "accuracy": 0.6666666666666666,
+      "mean_output_tokens": 35.0,
+      "mean_latency": 1.8872982244165921,
+      "truncated": 0,
+      "parse_errors": 0
+    },
+    "cod_zero": {
+      "N": 12,
+      "correct": 2,
+      "accuracy": 0.16666666666666666,
+      "mean_output_tokens": 80.5,
+      "mean_latency": 3.8304023884999956,
+      "truncated": 0,
+      "parse_errors": 8
+    }
+  },
+  "scoring_policy": {
+    "name": "strict_decimal_v1",
+    "prediction": "Use the final #### section when present; accept exactly one numeric value in the selected text.",
+    "gold": "Require a final #### section containing one complete numeric literal.",
+    "official_difference": "Official GSM8K code uses the first #### section, removes comma/$/%, then tries string equality and the first unsigned numeric match with float equality. This runner uses the final section, signed Decimal values and explicit parse errors for ambiguous text."
+  },
+  "latency_unit": "seconds"
+}

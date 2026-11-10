@@ -1,0 +1,191 @@
+{
+  "dataset": "openai/gsm8k",
+  "config": "main",
+  "split": "test",
+  "revision": "740312add88f781978c0658806c59bc2815b9866",
+  "source": "https://datasets-server.huggingface.co/rows",
+  "revision_contract": "Every response X-Revision equals the pinned dataset revision; rows API serves the current revision.",
+  "dataset_metadata": {
+    "requested_url": "https://huggingface.co/api/datasets/openai/gsm8k/revision/740312add88f781978c0658806c59bc2815b9866",
+    "resolved_url": "https://huggingface.co/api/datasets/openai/gsm8k/revision/740312add88f781978c0658806c59bc2815b9866",
+    "etag": "W/\"b60-Y5XWKSwpFDcHTDY8wgDHRuVXesQ\"",
+    "last_modified": null,
+    "x_revision": null,
+    "bytes": 2912,
+    "sha256": "944c493c9a9056d57e0960efe7adedf97e1e5da69fa0edeae7a4b6fe6d776ee8"
+  },
+  "row_count": 1319,
+  "id_contract": "id is the original integer row_idx; ordered contiguous IDs 0 through 1318",
+  "columns": [
+    "id",
+    "question",
+    "answer"
+  ],
+  "path": "data/test.jsonl",
+  "encoding": "UTF-8",
+  "line_endings": "LF",
+  "bytes": 757056,
+  "sha256": "588d151de94ce6365a05cbfed981677d0e8f7f56e4ce2cb2ae000990d51ea87c",
+  "validation": {
+    "unique_ids": true,
+    "original_order": true,
+    "all_gold_separators": true,
+    "all_gold_numeric": true
+  },
+  "pages": [
+    {
+      "offset": 0,
+      "count": 100,
+      "requested_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=0&length=100",
+      "resolved_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=0&length=100",
+      "etag": null,
+      "last_modified": null,
+      "x_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "bytes": 58860,
+      "sha256": "6e891355f9ac90a39415e24389aed9a54387ba1a6de229bb1cf7f9fffc9fea7a"
+    },
+    {
+      "offset": 100,
+      "count": 100,
+      "requested_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=100&length=100",
+      "resolved_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=100&length=100",
+      "etag": null,
+      "last_modified": null,
+      "x_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "bytes": 62084,
+      "sha256": "fb334976e946b5eb9cf75261fc116cd4f990350633842b5d4016aba3a68a94e7"
+    },
+    {
+      "offset": 200,
+      "count": 100,
+      "requested_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=200&length=100",
+      "resolved_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=200&length=100",
+      "etag": null,
+      "last_modified": null,
+      "x_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "bytes": 60319,
+      "sha256": "2c577488324fcb551c5e04becae9105738213105c0c87aa7538050a5ff9da10b"
+    },
+    {
+      "offset": 300,
+      "count": 100,
+      "requested_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=300&length=100",
+      "resolved_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=300&length=100",
+      "etag": null,
+      "last_modified": null,
+      "x_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "bytes": 58219,
+      "sha256": "3e55a9f4864c61e8b2cae2f1de8e2148920c104a8d08b1060fb96ee5ee499ce5"
+    },
+    {
+      "offset": 400,
+      "count": 100,
+      "requested_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=400&length=100",
+      "resolved_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=400&length=100",
+      "etag": null,
+      "last_modified": null,
+      "x_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "bytes": 61660,
+      "sha256": "8bfcca1237805a9db8836fe1a232a54dbbf30610df464b801d65b2ebf138318a"
+    },
+    {
+      "offset": 500,
+      "count": 100,
+      "requested_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=500&length=100",
+      "resolved_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=500&length=100",
+      "etag": null,
+      "last_modified": null,
+      "x_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "bytes": 59503,
+      "sha256": "079e41718ae2ad113b74601333aae40b640e38221825acafc37388b307c6aa0d"
+    },
+    {
+      "offset": 600,
+      "count": 100,
+      "requested_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=600&length=100",
+      "resolved_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=600&length=100",
+      "etag": null,
+      "last_modified": null,
+      "x_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "bytes": 58602,
+      "sha256": "8e8f0bb96dfffe359889c22436d5a375b105ede17cc5caa8540620b792df5702"
+    },
+    {
+      "offset": 700,
+      "count": 100,
+      "requested_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=700&length=100",
+      "resolved_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=700&length=100",
+      "etag": null,
+      "last_modified": null,
+      "x_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "bytes": 62131,
+      "sha256": "813d8d59408f8d126b6eed572c19ec8901e3ce1416c63429e314fef209ff456e"
+    },
+    {
+      "offset": 800,
+      "count": 100,
+      "requested_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=800&length=100",
+      "resolved_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=800&length=100",
+      "etag": null,
+      "last_modified": null,
+      "x_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "bytes": 61028,
+      "sha256": "713728e5a329a04eed7b72ef7838161dac12ef583b6937df3b394b6597c99a0b"
+    },
+    {
+      "offset": 900,
+      "count": 100,
+      "requested_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=900&length=100",
+      "resolved_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=900&length=100",
+      "etag": null,
+      "last_modified": null,
+      "x_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "bytes": 63107,
+      "sha256": "dd64320876e580187231fcd347efccdcb7bb7d01844a698999531aae105b7c34"
+    },
+    {
+      "offset": 1000,
+      "count": 100,
+      "requested_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=1000&length=100",
+      "resolved_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=1000&length=100",
+      "etag": null,
+      "last_modified": null,
+      "x_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "bytes": 66905,
+      "sha256": "c9c1a58c10c8919711897382531a766a8724d05972655d318354c6a762a4f1aa"
+    },
+    {
+      "offset": 1100,
+      "count": 100,
+      "requested_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=1100&length=100",
+      "resolved_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=1100&length=100",
+      "etag": null,
+      "last_modified": null,
+      "x_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "bytes": 60211,
+      "sha256": "658f078fadc23ff72dacf1e55263b16b6767fade86125ce3c1a7cdaf11c1a374"
+    },
+    {
+      "offset": 1200,
+      "count": 100,
+      "requested_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=1200&length=100",
+      "resolved_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=1200&length=100",
+      "etag": null,
+      "last_modified": null,
+      "x_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "bytes": 61895,
+      "sha256": "ab36345757053fcd2132921996d487e9a5219fa6ffb09bbbafdba49e5ef118c3"
+    },
+    {
+      "offset": 1300,
+      "count": 19,
+      "requested_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=1300&length=19",
+      "resolved_url": "https://datasets-server.huggingface.co/rows?dataset=openai%2Fgsm8k&config=main&split=test&offset=1300&length=19",
+      "etag": null,
+      "last_modified": null,
+      "x_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "bytes": 10724,
+      "sha256": "cabf6b3355272e4d315efdfe06765cd1d4d13d60fdcf2df0efb79d59eb093bd7"
+    }
+  ]
+}

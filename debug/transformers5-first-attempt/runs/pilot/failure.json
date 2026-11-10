@@ -1,0 +1,8 @@
+{
+  "phase": "pilot",
+  "stage": "model_load",
+  "failed_at": "2026-11-06T14:44:38.149096+00:00",
+  "exception_type": "RuntimeError",
+  "message": "Loaded model revision differs: expected=aa8e72537993ba99e69dfaafa59ed015b17504d1, actual=None",
+  "traceback": "Traceback (most recent call last):\n  File \"/kaggle/working/cod-reproduction/experiment.py\", line 490, in run_experiment\n    runtime = get_runtime(config[\"model_id\"], config[\"model_revision\"], config[\"dtype\"], config[\"device\"])\n  File \"/kaggle/working/cod-reproduction/experiment.py\", line 261, in get_runtime\n    raise RuntimeError(f\"Loaded model revision differs: expected={revision}, actual={actual_revision}\")\nRuntimeError: Loaded model revision differs: expected=aa8e72537993ba99e69dfaafa59ed015b17504d1, actual=None\n"
+}

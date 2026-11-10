@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "phase": "pilot",
+  "config": {
+    "model_id": "Qwen/Qwen2.5-3B-Instruct",
+    "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "seed": 42,
+    "sample_size": 100,
+    "pilot_size": 12,
+    "max_new_tokens": 4096,
+    "warmup_tokens": 16,
+    "few_shot_count": 8,
+    "dtype": "float16",
+    "device": "cuda:0",
+    "methods": [
+      "baseline",
+      "cot",
+      "cod",
+      "cod_zero"
+    ]
+  },
+  "plan": [
+    {
+      "id": 588,
+      "data_index": 588,
+      "methods": [
+        "baseline",
+        "cod",
+        "cod_zero",
+        "cot"
+      ]
+    },
+    {
+      "id": 1214,
+      "data_index": 1214,
+      "methods": [
+        "baseline",
+        "cot",
+        "cod_zero",
+        "cod"
+      ]
+    },
+    {
+      "id": 57,
+      "data_index": 57,
+      "methods": [
+        "cod",
+        "baseline",
+        "cod_zero",
+        "cot"
+      ]
+    },
+    {
+      "id": 906,
+      "data_index": 906,
+      "methods": [
+        "baseline",
+        "cot",
+        "cod",
+        "cod_zero"
+      ]
+    },
+    {
+      "id": 1252,
+      "data_index": 1252,
+      "methods": [
+        "cod_zero",
+        "cot",
+        "baseline",
+        "cod"
+      ]
+    },
+    {
+      "id": 618,
+      "data_index": 618,
+      "methods": [
+        "baseline",
+        "cod",
+        "cod_zero",
+        "cot"
+      ]
+    },
+    {
+      "id": 599,
+      "data_index": 599,
+      "methods": [
+        "cod",
+        "baseline",
+        "cod_zero",
+        "cot"
+      ]
+    },
+    {
+      "id": 289,
+      "data_index": 289,
+      "methods": [
+        "baseline",
+        "cot",
+        "cod_zero",
+        "cod"
+      ]
+    },
+    {
+      "id": 608,
+      "data_index": 608,
+      "methods": [
+        "cod_zero",
+        "cod",
+        "cot",
+        "baseline"
+      ]
+    },
+    {
+      "id": 400,
+      "data_index": 400,
+      "methods": [
+        "cod",
+        "cod_zero",
+        "baseline",
+        "cot"
+      ]
+    },
+    {
+      "id": 237,
+      "data_index": 237,
+      "methods": [
+        "cot",
+        "cod_zero",
+        "cod",
+        "baseline"
+      ]
+    },
+    {
+      "id": 616,
+      "data_index": 616,
+      "methods": [
+        "cod",
+        "cot",
+        "cod_zero",
+        "baseline"
+      ]
+    }
+  ],
+  "sample_ids": [
+    588,
+    1214,
+    57,
+    906,
+    1252,
+    618,
+    599,
+    289,
+    608,
+    400,
+    237,
+    616
+  ],
+  "scoring_policy": {
+    "name": "strict_decimal_v1",
+    "prediction": "Use the final #### section when present; accept exactly one numeric value in the selected text.",
+    "gold": "Require a final #### section containing one complete numeric literal.",
+    "official_difference": "Official GSM8K code uses the first #### section, removes comma/$/%, then tries string equality and the first unsigned numeric match with float equality. This runner uses the final section, signed Decimal values and explicit parse errors for ambiguous text."
+  },
+  "fingerprints": {
+    "config": "7aba9decd8b30e9b3c442cbb087d608657e7ecaacbc12b6142e3be0ec0b34989",
+    "data/test.jsonl": "588d151de94ce6365a05cbfed981677d0e8f7f56e4ce2cb2ae000990d51ea87c",
+    "prompts": {
+      "gsm8k_baseline.yaml": "1ded09ca345a6194aec36069f2aa5f618f8895d68666b7e2b5f8de9e9870a507",
+      "gsm8k_cot.yaml": "77fda02c1c68dc9e1f0143fed83e78c9f18febd838bfe2b4efcf86e90acf420d",
+      "gsm8k_cod.yaml": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb"
+    },
+    "implementation": "cb99bf7008658d41cdbbb8c0e7cf5cd7f61001456d8e9f5fe1e290139af5444e",
+    "source_files": {
+      "reference/paper.pdf": "ae9030d1d30ed437b15f4989443dae7d10a31dd2cedc954413c776e686953ba3",
+      "reference/provenance.json": "453dd7afbb88c55389cdbb2264bc2fea23fde1a45a345602ee7debc7e7c9924a",
+      "reference/upstream/.gitignore": "427b9b1290dddf9ec06c1a16055af98816b88ba8ab887a7091c77d0fc0b1d681",
+      "reference/upstream/README.md": "fa1ef1927a15c1d7bd8fe6f3b756da5f96af6c4a67544c14eea8e6eec13f815d",
+      "reference/upstream/configs/coin_flip_baseline.yaml": "a091f66bf56ef257662dfba06d9068a78dfecc18ec9ab493d2ced0bd540ecbed",
+      "reference/upstream/configs/coin_flip_cod.yaml": "0951e62952237544ed44e1bfdba111d6a9749d82d9425e05ed10e0d21e370598",
+      "reference/upstream/configs/coin_flip_cot.yaml": "21cdf8545ea42d953f79c5d7f09695e3b59cbe01b7f1baa6df02c1f5713b0fb4",
+      "reference/upstream/configs/date_baseline.yaml": "378de91833b53b05cbba5418c9d7b40432ef76811b022ba025bc5f4012a0b172",
+      "reference/upstream/configs/date_cod.yaml": "618cf7331ce944d3bdd4f4b4d2125cf47f5787cac5ba7bafca05e7b0d8636f6c",
+      "reference/upstream/configs/date_cot.yaml": "75cb25190deeec5146c293ebe2915e04e1a5e64764ab6b866ce53783b494a7f2",
+      "reference/upstream/configs/gsm8k_baseline.yaml": "1ded09ca345a6194aec36069f2aa5f618f8895d68666b7e2b5f8de9e9870a507",
+      "reference/upstream/configs/gsm8k_cod.yaml": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb",
+      "reference/upstream/configs/gsm8k_cot.yaml": "77fda02c1c68dc9e1f0143fed83e78c9f18febd838bfe2b4efcf86e90acf420d",
+      "reference/upstream/configs/sports_baseline.yaml": "20b5f7247bc290b56be4919dfedcc87b52382811f05e358102da9c67442c8d63",
+      "reference/upstream/configs/sports_cod.yaml": "8a700d3b111cbf8a478670d40fa4c3b260234da4e34774137f6967692ba43efc",
+      "reference/upstream/configs/sports_cot.yaml": "8aff9f75a2e70c27fdf577322bdf04a4492a1535dc463e99de5b8aeb39413784",
+      "reference/upstream/data/coin_flip_4.json": "5db26811b2f72ff3bb4bd721a91530fd70cd3a051dd2f7ddde3b10f16c7dfbb3",
+      "reference/upstream/data/date.json": "07ff1542ffdb6fdd7d874d93ec80d8dc4f5e51c1592e7370be3e97ef0570221b",
+      "reference/upstream/data/sports.json": "1582404184c3dc79e84b58d1996836c0fa091bfdbb65942452ae508cf37c26db",
+      "reference/upstream/evaluate.py": "c7a4210a3f1ec2e4e8770a46f9c5da4593d3c63ddeff642544d63a1c987705f2",
+      "reference/upstream/llm_client.py": "de36886e5dbba9e39afe242ec9a2053aa3acf30e6af33912d5ac0006c8ed91e1",
+      "reference/upstream/requirements.txt": "782397c009ae17e1691d3bc280cc7543b7c64b400471935ecb41d33122fdcb19",
+      "reference/upstream/tasks/base.py": "434fef888065a7de7e990e8d53c00dee8950c418b32a26a55e80e7dc4539dec8",
+      "reference/upstream/tasks/coin_flip.py": "2e3937920f969364e8e0739ba0dc705581ba4633d2709cd3fc2b1569aae42562",
+      "reference/upstream/tasks/date.py": "3128152ca84ab80db1c1000ca9fe868b79a40133a0074b630e7dcc3a925d8af2",
+      "reference/upstream/tasks/gsm8k.py": "884b1c71843390be21f722c2f7449607c0cba9cf41d492b67e6c76b6c883ae4a",
+      "reference/upstream/tasks/sports.py": "b7d0b07294fe191af552d02077bd08a34143e033284059e5b68c1bb2ba0aa274",
+      "reference/upstream/utils.py": "6e144442e14cb16ebb7313661a80552a0e7e5d03d3828a54b47a79e5eb361782",
+      "reference/选题与复现方案.md": "7a1394a74c1c2c50e2bcf3806f920b8580db26904b8c018b972b226015609cd2"
+    }
+  },
+  "resource_verification": {
+    "status": "passed",
+    "rows": 1319,
+    "data_sha256": "588d151de94ce6365a05cbfed981677d0e8f7f56e4ce2cb2ae000990d51ea87c",
+    "source_commit": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+    "source_tree_sha256": "c60c90ec719489aa8e4ed7fca9d2235c8851af7fdea9b6c7e472951783334b47",
+    "paper_sha256": "ae9030d1d30ed437b15f4989443dae7d10a31dd2cedc954413c776e686953ba3",
+    "prompt_copies": "byte-identical"
+  },
+  "created_at": "2026-11-06T14:43:25.335488+00:00",
+  "runtime": null,
+  "warmups": [],
+  "completed": false
+}

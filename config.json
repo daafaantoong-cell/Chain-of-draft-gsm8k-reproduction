@@ -1,0 +1,13 @@
+{
+  "model_id": "Qwen/Qwen2.5-3B-Instruct",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "seed": 42,
+  "sample_size": 100,
+  "pilot_size": 12,
+  "max_new_tokens": 4096,
+  "warmup_tokens": 16,
+  "few_shot_count": 8,
+  "dtype": "float16",
+  "device": "cuda:0",
+  "methods": ["baseline", "cot", "cod", "cod_zero"]
+}

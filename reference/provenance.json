@@ -1,0 +1,217 @@
+{
+  "created_utc": "2026-11-06T14:24:20.566008+00:00",
+  "source": {
+    "repository": "https://github.com/sileix/chain-of-draft",
+    "commit": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+    "pin_resolution": {
+      "method": "git ls-remote https://github.com/sileix/chain-of-draft.git HEAD",
+      "observed_head": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+      "observed_date": "2026-11-06",
+      "behavior": "The recorded HEAD is the fixed source commit for this experiment."
+    },
+    "archive": {
+      "requested_url": "https://codeload.github.com/sileix/chain-of-draft/zip/a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+      "resolved_url": "https://codeload.github.com/sileix/chain-of-draft/zip/a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+      "etag": "W/\"657293e80b4014d73a54f3e93d510d288e2577db09573e88293a40950fbccb9d\"",
+      "last_modified": null,
+      "x_revision": null,
+      "bytes": 52344,
+      "sha256": "dc5455087856c1024e8f8431ec5074848c08db715c6d55f19bb922e5e2b02232"
+    },
+    "directory": "reference/upstream",
+    "tree_sha256_algorithm": "SHA256 of sorted UTF-8 path + NUL + file SHA256 + LF records",
+    "tree_sha256": "c60c90ec719489aa8e4ed7fca9d2235c8851af7fdea9b6c7e472951783334b47",
+    "files": [
+      {
+        "path": ".gitignore",
+        "bytes": 40,
+        "sha256": "427b9b1290dddf9ec06c1a16055af98816b88ba8ab887a7091c77d0fc0b1d681"
+      },
+      {
+        "path": "README.md",
+        "bytes": 2072,
+        "sha256": "fa1ef1927a15c1d7bd8fe6f3b756da5f96af6c4a67544c14eea8e6eec13f815d"
+      },
+      {
+        "path": "configs/coin_flip_baseline.yaml",
+        "bytes": 1299,
+        "sha256": "a091f66bf56ef257662dfba06d9068a78dfecc18ec9ab493d2ced0bd540ecbed"
+      },
+      {
+        "path": "configs/coin_flip_cod.yaml",
+        "bytes": 1866,
+        "sha256": "0951e62952237544ed44e1bfdba111d6a9749d82d9425e05ed10e0d21e370598"
+      },
+      {
+        "path": "configs/coin_flip_cot.yaml",
+        "bytes": 2911,
+        "sha256": "21cdf8545ea42d953f79c5d7f09695e3b59cbe01b7f1baa6df02c1f5713b0fb4"
+      },
+      {
+        "path": "configs/date_baseline.yaml",
+        "bytes": 1218,
+        "sha256": "378de91833b53b05cbba5418c9d7b40432ef76811b022ba025bc5f4012a0b172"
+      },
+      {
+        "path": "configs/date_cod.yaml",
+        "bytes": 1700,
+        "sha256": "618cf7331ce944d3bdd4f4b4d2125cf47f5787cac5ba7bafca05e7b0d8636f6c"
+      },
+      {
+        "path": "configs/date_cot.yaml",
+        "bytes": 2026,
+        "sha256": "75cb25190deeec5146c293ebe2915e04e1a5e64764ab6b866ce53783b494a7f2"
+      },
+      {
+        "path": "configs/gsm8k_baseline.yaml",
+        "bytes": 1569,
+        "sha256": "1ded09ca345a6194aec36069f2aa5f618f8895d68666b7e2b5f8de9e9870a507"
+      },
+      {
+        "path": "configs/gsm8k_cod.yaml",
+        "bytes": 1889,
+        "sha256": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb"
+      },
+      {
+        "path": "configs/gsm8k_cot.yaml",
+        "bytes": 2633,
+        "sha256": "77fda02c1c68dc9e1f0143fed83e78c9f18febd838bfe2b4efcf86e90acf420d"
+      },
+      {
+        "path": "configs/sports_baseline.yaml",
+        "bytes": 1145,
+        "sha256": "20b5f7247bc290b56be4919dfedcc87b52382811f05e358102da9c67442c8d63"
+      },
+      {
+        "path": "configs/sports_cod.yaml",
+        "bytes": 1721,
+        "sha256": "8a700d3b111cbf8a478670d40fa4c3b260234da4e34774137f6967692ba43efc"
+      },
+      {
+        "path": "configs/sports_cot.yaml",
+        "bytes": 2041,
+        "sha256": "8aff9f75a2e70c27fdf577322bdf04a4492a1535dc463e99de5b8aeb39413784"
+      },
+      {
+        "path": "data/coin_flip_4.json",
+        "bytes": 47002,
+        "sha256": "5db26811b2f72ff3bb4bd721a91530fd70cd3a051dd2f7ddde3b10f16c7dfbb3"
+      },
+      {
+        "path": "data/date.json",
+        "bytes": 127369,
+        "sha256": "07ff1542ffdb6fdd7d874d93ec80d8dc4f5e51c1592e7370be3e97ef0570221b"
+      },
+      {
+        "path": "data/sports.json",
+        "bytes": 196764,
+        "sha256": "1582404184c3dc79e84b58d1996836c0fa091bfdbb65942452ae508cf37c26db"
+      },
+      {
+        "path": "evaluate.py",
+        "bytes": 2933,
+        "sha256": "c7a4210a3f1ec2e4e8770a46f9c5da4593d3c63ddeff642544d63a1c987705f2"
+      },
+      {
+        "path": "llm_client.py",
+        "bytes": 1447,
+        "sha256": "de36886e5dbba9e39afe242ec9a2053aa3acf30e6af33912d5ac0006c8ed91e1"
+      },
+      {
+        "path": "requirements.txt",
+        "bytes": 97,
+        "sha256": "782397c009ae17e1691d3bc280cc7543b7c64b400471935ecb41d33122fdcb19"
+      },
+      {
+        "path": "tasks/base.py",
+        "bytes": 1935,
+        "sha256": "434fef888065a7de7e990e8d53c00dee8950c418b32a26a55e80e7dc4539dec8"
+      },
+      {
+        "path": "tasks/coin_flip.py",
+        "bytes": 2639,
+        "sha256": "2e3937920f969364e8e0739ba0dc705581ba4633d2709cd3fc2b1569aae42562"
+      },
+      {
+        "path": "tasks/date.py",
+        "bytes": 1339,
+        "sha256": "3128152ca84ab80db1c1000ca9fe868b79a40133a0074b630e7dcc3a925d8af2"
+      },
+      {
+        "path": "tasks/gsm8k.py",
+        "bytes": 1235,
+        "sha256": "884b1c71843390be21f722c2f7449607c0cba9cf41d492b67e6c76b6c883ae4a"
+      },
+      {
+        "path": "tasks/sports.py",
+        "bytes": 1440,
+        "sha256": "b7d0b07294fe191af552d02077bd08a34143e033284059e5b68c1bb2ba0aa274"
+      },
+      {
+        "path": "utils.py",
+        "bytes": 1684,
+        "sha256": "6e144442e14cb16ebb7313661a80552a0e7e5d03d3828a54b47a79e5eb361782"
+      }
+    ],
+    "prompts": [
+      {
+        "path": "prompts/gsm8k_baseline.yaml",
+        "upstream_path": "configs/gsm8k_baseline.yaml",
+        "sha256": "1ded09ca345a6194aec36069f2aa5f618f8895d68666b7e2b5f8de9e9870a507",
+        "fewshot_count": 8
+      },
+      {
+        "path": "prompts/gsm8k_cot.yaml",
+        "upstream_path": "configs/gsm8k_cot.yaml",
+        "sha256": "77fda02c1c68dc9e1f0143fed83e78c9f18febd838bfe2b4efcf86e90acf420d",
+        "fewshot_count": 8
+      },
+      {
+        "path": "prompts/gsm8k_cod.yaml",
+        "upstream_path": "configs/gsm8k_cod.yaml",
+        "sha256": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb",
+        "fewshot_count": 8
+      }
+    ],
+    "request_contract": {
+      "sources": [
+        "utils.py:24",
+        "llm_client.py:12",
+        "tasks/base.py:30"
+      ],
+      "compose": [
+        "request = config.system_prompt + '\\n'",
+        "shot=None uses len(config.fewshot), which is eight for each GSM8K configuration",
+        "fewshot = [config.format.format(question=ex.question, answer=ex.answer) for ex in config.fewshot[:shot]]",
+        "request += '\\n'.join(fewshot) + '\\n' when shot != 0",
+        "request += config.format.format(question=question, answer='')"
+      ],
+      "yaml_whitespace": "YAML literal-block terminal newlines participate in composition.",
+      "messages": [
+        {
+          "role": "user",
+          "content": "the complete composed request"
+        }
+      ],
+      "temperature": 0.0,
+      "max_tokens": 4096
+    }
+  },
+  "data": {
+    "manifest": "data/manifest.json",
+    "sha256": "588d151de94ce6365a05cbfed981677d0e8f7f56e4ce2cb2ae000990d51ea87c",
+    "row_count": 1319,
+    "revision": "740312add88f781978c0658806c59bc2815b9866"
+  },
+  "paper": {
+    "arxiv_id": "2502.18600",
+    "path": "reference/paper.pdf",
+    "requested_url": "https://arxiv.org/pdf/2502.18600",
+    "resolved_url": "https://arxiv.org/pdf/2502.18600",
+    "etag": "CJWZn5q+74sDEAI=",
+    "last_modified": "Tue, 04 Mar 2025 03:30:01 GMT",
+    "x_revision": null,
+    "bytes": 216414,
+    "sha256": "ae9030d1d30ed437b15f4989443dae7d10a31dd2cedc954413c776e686953ba3"
+  }
+}

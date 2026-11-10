@@ -1,0 +1,4 @@
+# 资源准备、测试与报告生成所需依赖（不需要 GPU）
+requests
+PyYAML==6.0.3
+matplotlib

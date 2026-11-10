@@ -1,0 +1,5 @@
+method,N,strict_correct,strict_accuracy,official_correct,official_accuracy,mean_output_tokens,mean_latency_seconds,truncated,parse_errors,verdict_changes,strict_only_correct,official_only_correct
+baseline,100,7,0.07,7,0.07,3.64,0.3247507055399819,0,1,0,0,0
+cot,100,59,0.59,63,0.63,223.92,10.762099131690006,0,30,6,1,5
+cod,100,44,0.44,44,0.44,38.64,2.038365249510025,0,1,0,0,0
+cod_zero,100,20,0.2,25,0.25,57.51,2.6849244037400104,0,42,7,1,6

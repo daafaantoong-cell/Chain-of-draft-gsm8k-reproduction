@@ -1,0 +1,8 @@
+# 真实模型推理依赖。
+# 先按 https://pytorch.org/get-started/locally/ 安装与本机 CUDA 匹配的 PyTorch，
+# 再安装本文件。
+transformers==4.57.1
+accelerate==1.10.1
+PyYAML==6.0.3
+tokenizers
+safetensors

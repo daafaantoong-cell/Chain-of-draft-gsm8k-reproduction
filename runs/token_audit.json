@@ -1,0 +1,16 @@
+{
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "tokenizer_class": "Qwen2TokenizerFast",
+  "checks": {
+    "pilot": {
+      "records": 48,
+      "results_sha256": "68a53c91b6c53940fd720aca91e26cf195f261191c5568fa7daf810e3581d7e1",
+      "output_decode_and_input_counts": "passed"
+    },
+    "full": {
+      "records": 400,
+      "results_sha256": "24ac68b433f04211a1a5f99939b4b5241f5c5ede1c7d1cae77d399caabbba5a6",
+      "output_decode_and_input_counts": "passed"
+    }
+  }
+}

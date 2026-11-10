@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Notebook / OS
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Office lock files
+~$*

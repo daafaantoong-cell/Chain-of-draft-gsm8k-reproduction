@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "rows": 1319,
+  "data_sha256": "588d151de94ce6365a05cbfed981677d0e8f7f56e4ce2cb2ae000990d51ea87c",
+  "source_commit": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+  "source_tree_sha256": "c60c90ec719489aa8e4ed7fca9d2235c8851af7fdea9b6c7e472951783334b47",
+  "paper_sha256": "ae9030d1d30ed437b15f4989443dae7d10a31dd2cedc954413c776e686953ba3",
+  "prompt_copies": "byte-identical"
+}
+{
+  "status": "passed",
+  "records": 400,
+  "report": "C:\\Users\\24573\\Downloads\\CoD-Reproduction\\report.md",
+  "figures": [
+    "figures/full_metrics.png",
+    "figures/full_metrics.svg",
+    "figures/accuracy_tokens.png",
+    "figures/accuracy_tokens.svg"
+  ],
+  "selected_examples": 4,
+  "metrics_csv": "runs/full/metrics.csv",
+  "official_changed": 13
+}
